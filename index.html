@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your awesome title | Write an awesome description for your new site here.</title>
+  <link rel="stylesheet" href="/assets/main.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <!-- Header content -->
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <div class="home">
+        <h2 class="post-list-heading">Posts</h2>
+        <ul class="post-list">
+          <li>
+            <span class="post-meta">Apr 22, 2024</span>
+            <h3>
+              <a class="post-link" href="/jekyll/update/2024/04/22/welcome-to-jekyll.html">
+                Welcome to Jekyll!
+              </a>
+            </h3>
+          </li>
+        </ul>
+        <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+      </div>
+
+      <!-- Section for Dockerhub image upload steps -->
+      <div class="dockerhub-upload">
+        <h2>Uploading Container Images to Dockerhub</h2>
+        <ol>
+          <li>Create a Dockerhub account if you don't have one already.</li>
+          <li>Build your Docker container image using Dockerfile.</li>
+          <li>Tag your Docker image with your Dockerhub username and repository name: <code>docker tag [image-id] yourusername/repositoryname:tag</code>.</li>
+          <li>Log in to Dockerhub using the Docker CLI: <code>docker login</code>.</li>
+          <li>Push your Docker image to Dockerhub: <code>docker push yourusername/repositoryname:tag</code>.</li>
+          <li>Verify that your image is uploaded successfully on Dockerhub.</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer h-card">
+    <!-- Footer content -->
+  </footer>
+</body>
+</html>
