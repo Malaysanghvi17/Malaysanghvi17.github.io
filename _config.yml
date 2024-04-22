@@ -21,11 +21,11 @@
 title: Blog Post on uploading the container images to Dockerhub
 email: malay.sce21@sot.pdpu.ac.in
 description: 
-Create a Dockerhub account if you don't have one already.
+Create a Dockerhub account if you donot have one already.
 Build your Docker container image using Dockerfile.
-Tag your Docker image with your Dockerhub username and repository name: docker tag [image-id] yourusername/repositoryname:tag.
-Log in to Dockerhub using the Docker CLI: docker login.
-Push your Docker image to Dockerhub: docker push yourusername/repositoryname:tag.
+Tag your Docker image with your Dockerhub username and repository name- docker tag [image-id] yourusername/repositoryname:tag.
+Log in to Dockerhub using the Docker CLI- docker login.
+Push your Docker image to Dockerhub- docker push yourusername/repositoryname:tag.
 Verify that your image is uploaded successfully on Dockerhub.
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
