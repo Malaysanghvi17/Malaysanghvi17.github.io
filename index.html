@@ -5,7 +5,72 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Your awesome title | Write an awesome description for your new site here.</title>
-  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .post-list-heading {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .post-meta {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .post-link {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .dockerhub-upload {
+      margin-top: 40px;
+    }
+
+    .dockerhub-upload h2 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .dockerhub-upload ol {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .dockerhub-upload li {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .dockerhub-upload img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .dockerhub-upload img.label {
+      display: block;
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+    
+  </style>
 </head>
 <body>
   <header class="site-header" role="banner">
@@ -14,36 +79,78 @@
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       <div class="home">
-        <h2 class="post-list-heading">Posts</h2>
-        <ul class="post-list">
-          <li>
-            <span class="post-meta">Apr 22, 2024</span>
-            <h3>
-              <a class="post-link" href="/jekyll/update/2024/04/22/welcome-to-jekyll.html">
-                Welcome to Jekyll!
-              </a>
-            </h3>
-          </li>
-        </ul>
-        <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+        <h1>
+          <a class="post-link" href="/jekyll/update/2024/04/22/welcome-to-jekyll.html">
+            Welcome to the Blog Post made using Jekyll and github!
+          </a>
+        </h1>
+        <span class="post-meta">Apr 22, 2024</span>
       </div>
-
       <!-- Section for Dockerhub image upload steps -->
       <div class="dockerhub-upload">
-        <h2>Uploading Container Images to Dockerhub</h2>
+        <h2>Follow the below given steps to upload docker image to dockerhub</h2>
         <ol>
-          <li>Create a Dockerhub account if you don't have one already.</li>
-          <li>Build your Docker container image using Dockerfile.</li>
-          <li>Tag your Docker image with your Dockerhub username and repository name: <code>docker tag [image-id] yourusername/repositoryname:tag</code>.</li>
-          <li>Log in to Dockerhub using the Docker CLI: <code>docker login</code>.</li>
-          <li>Push your Docker image to Dockerhub: <code>docker push yourusername/repositoryname:tag</code>.</li>
-          <li>Verify that your image is uploaded successfully on Dockerhub.</li>
+          <li>
+            <div class="step">
+              <strong>Step 1:</strong> Create a Dockerhub account if you don't have one already.
+            </div>
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 2:</strong> Create your project, for example, here I am having a simple project which shows the todo list using Node.js.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/1.png?raw=true" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 3:</strong> Add Dockerfile to your project.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/2.png?raw=true" alt="Step 3: Add Dockerfile">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 4:</strong> Build image of the project you just created.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/3.png?raw=true" alt="Step 4: Build image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 5:</strong> Tag your Docker image with your Dockerhub username and repository name like: <code>docker tag imagename yourusername/imagename:tag</code>.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/5.png?raw=true" alt="Step 5: Tag your Docker image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 6:</strong> You can check that new image will be created with username/repositoryname.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/6.png?raw=true" alt="Step 6: Check new image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 7:</strong> Log in to Dockerhub using the Docker CLI: <code>docker login</code>.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/7.png?raw=true" alt="Step 7: Log in to Dockerhub">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 8:</strong> Push your Docker image to Dockerhub: <code>docker push yourusername/repositoryname:tag</code>.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/8.png?raw=true" alt="Step 8: Push your Docker image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 9:</strong> Verify that your image is uploaded successfully on Dockerhub.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/9.png?raw=true" alt="Step 9: Verify uploaded image">
+          </li>
         </ol>
+        <h2>Thankyou for reading till the end!</h2>
       </div>
     </div>
   </main>
-  <footer class="site-footer h-card">
-    <!-- Footer content -->
+  <footer class="site-footer h-card" style="padding: 15px; text-align: center;">
+    <h3>feel free to contact me in case of any doubts or queries!</h3>
+    <h3>My Email id: malaysanghvi2004@gmail.com</h3>
   </footer>
 </body>
 </html>
