@@ -1,208 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BlogPost on docker</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malay Sanghvi | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS (Animate on Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f4f6;
+        }
 
-    .wrapper {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+        /* Custom styling */
+        .gradient-bg {
+            background: linear-gradient(to right, #4CAF50, #81C784);
+        }
 
-    .post-list-heading {
-      color: #333;
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
+        .profile-pic {
+            border-radius: 50%;
+        }
 
-    .post-meta {
-      color: #666;
-      font-size: 14px;
-    }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
 
-    .post-link {
-      color: #007bff;
-      text-decoration: none;
-    }
+        .hover-zoom:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
 
-    .dockerhub-upload {
-      margin-top: 40px;
-    }
-
-    .dockerhub-upload h2 {
-      color: #333;
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    .dockerhub-upload ol {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .dockerhub-upload li {
-      margin-bottom: 20px;
-      font-size: 18px;
-    }
-
-    .dockerhub-upload img {
-      max-width: 100%;
-      height: auto;
-      margin-top: 10px;
-    }
-
-    .dockerhub-upload img.label {
-      display: block;
-      font-size: 14px;
-      color: #666;
-      margin-top: 5px;
-    }
-    
-  </style>
+        /* Center content */
+        .content-center {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-<body>
-  <header class="site-header" role="banner">
-    <!-- Header content -->
-  </header>
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-      <div class="home">
-        <h1>
-          <a class="post-link" href="/jekyll/update/2024/04/22/welcome-to-jekyll.html">
-            Welcome to the Blog Post made using Jekyll and github!
-          </a>
-        </h1>
-        <span class="post-meta">Apr 22, 2024</span>
-      </div>
-      <!-- Section for Dockerhub image upload steps -->
-      <div class="dockerhub-upload">
-        <h2>Follow the below given steps to upload multi container(tier 3) image project to dockerhub</h2>
-        <ol>
-          <li>
-            <div class="step">
-              <strong>Step 1:</strong> Create your project's directory structure as shown in figure.
+<body class="font-sans leading-relaxed text-gray-800">
+
+    <!-- Header -->
+    <header class="gradient-bg text-white p-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-2">Malay Sanghvi</h1>
+            <p>Ahmedabad, Gujarat, India</p>
+            <p> +91 - 8238477918 | <a href="mailto:malaysanghvi2004@gmail.com" class="underline">malaysanghvi2004@gmail.com</a></p>
+            <nav class="mt-4">
+                <a href="#education" class="text-white hover:text-gray-300 mx-4">Education</a>
+                <a href="#experience" class="text-white hover:text-gray-300 mx-4">Experience</a>
+                <a href="#projects" class="text-white hover:text-gray-300 mx-4">Projects</a>
+                <a href="#skills" class="text-white hover:text-gray-300 mx-4">Skills</a>
+                <a href="#achievements" class="text-white hover:text-gray-300 mx-4">Achievements</a>
+                <a href="#coding-profiles" class="text-white hover:text-gray-300 mx-4">Coding Profiles</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="container mx-auto mt-16 px-6 content-center">
+        <div class="text-center" data-aos="fade-up">
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/face_image.jpeg?raw=true" alt="Profile Picture" class="mx-auto profile-pic shadow-lg hover-zoom" width="150">
+            <h2 class="text-3xl font-bold mt-4">Welcome to My Portfolio</h2>
+            <p class="mt-2 text-gray-600">Aspiring Software Developer with a passion for building innovative solutions.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container mx-auto mt-16 px-6 content-center" data-aos="fade-right">
+        <h2 class="section-title text-center font-bold">Education</h2>
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold">Pandit Deendayal Energy University, Gujarat (2025)</h3>
+            <p>B. Tech in Computer Science and Engineering, CGPA: 9.5/10.0</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container mx-auto mt-16 px-6 content-center" data-aos="fade-left">
+        <h2 class="section-title text-center font-bold">Experience</h2>
+        <div class="grid grid-cols-1 gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Software Development Intern | Iolite Softwares | May 2024 – July 2024</h3>
+                <ul class="list-disc list-inside">
+                    <li>Created data pipelines for IPR data using Python, ODBC, lxml, and MS-SQL Server.</li>
+                    <li>Optimized performance using multithreading, stored data in databases and Excel sheets.</li>
+                </ul>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/11.png?raw=true" alt="Step 2: Create your project">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 2:</strong> Add dockerfile to each of the three tiers of the project like app, api and db as shown in further steps.
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Software Development Intern | Squirrel Softech Services | June 2023 – July 2023</h3>
+                <ul class="list-disc list-inside">
+                    <li>Designed a data analytics dashboard using HTML, CSS, JavaScript, D3.js, Node.js, and Python.</li>
+                    <li>Integrated the dashboard with Tableau Software using Tableau HyperAPIs.</li>
+                </ul>
             </div>
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 3:</strong> Add dockerfile in api as shown: 
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto mt-16 px-6 content-center" data-aos="fade-up">
+        <h2 class="section-title text-center font-bold">Projects</h2>
+        <div class="grid grid-cols-1 gap-6">
+            <!-- Project 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 hover-zoom">
+                <h3 class="text-xl font-semibold">Virtual Machine Orchestration Platform | React.js, Node.js, Node-pty, Express.js, Docker, JWT, SSH</h3>
+                <p>• Developed a user-friendly platform (IaaS) for managing and interacting with virtual machines/OS containers.</p>
+                <p>• Implemented secure login/signup with authentication tokens for user access, enabling customization of VM specifications.</p>
+                <p>• Provided a command-line interface for SSH connections, enhancing usability and security for VM interactions.</p>
+                <p>• Employed Docker to run VM containers, allowing for flexible and efficient VM creation.</p>
+                <a href="https://github.com/Malaysanghvi17/VM-orchestration-platform" class="text-blue-500 underline">Github Link</a>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/12.png?raw=true" alt="Step 2: Create your project">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 4:</strong> Add dockerfile in app as shown: 
+
+            <!-- Project 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 hover-zoom">
+                <h3 class="text-xl font-semibold">Stock Analytics and Prediction App | Spark, Kafka, Python, Streamlit, BeautifulSoup</h3>
+                <p>• Integrated Kafka for data ingestion and Spark for data preprocessing and stock trend analysis.</p>
+                <p>• Used Spark ML models to predict stock trends based on historical and real-time data.</p>
+                <p>• Built web scrapers using BeautifulSoup to collect up-to-date stock information from financial websites.</p>
+                <p>• Developed an interactive dashboard using Streamlit for data visualization and user interaction.</p>
+                <a href="https://github.com/Malaysanghvi17/kafka-spark-based-stock-analytics-prediction-app" class="text-blue-500 underline">Github Link</a>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/13.png?raw=true" alt="Step 2: Create your project">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 5:</strong> Add dockerfile in db as shown: 
+
+            <!-- Project 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 hover-zoom">
+                <h3 class="text-xl font-semibold">Reverse Proxy Server | C++, Linux, Apache2 server, OOP</h3>
+                <p>• Designed a multi-threaded C++ reverse proxy server using TCP sockets for forwarding client requests.</p>
+                <p>• Implemented round-robin load balancing to distribute incoming requests across multiple servers.</p>
+                <p>• Ensured optimal throughput by handling client-server connections concurrently with thread pooling.</p>
+                <p>• Maintained responsiveness and minimized latency under heavy loads.</p>
+                <a href="https://github.com/Malaysanghvi17/Reverse_Proxy_Server" class="text-blue-500 underline">Github Link</a>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/14.png?raw=true" alt="Step 2: Create your project">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 6:</strong> Based on the individual dockerfiles of tier three application, create a docker-compose.yml file in the root directory as shown: 
+
+            <!-- Project 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 hover-zoom">
+                <h3 class="text-xl font-semibold">Human Anomalous Actions Classification from Video | Python, TensorFlow, NumPy, Keras, Pandas</h3>
+                <p>• Developed a hybrid deep learning model using a CNN-RNN architecture to classify human actions in real-time.</p>
+                <p>• Trained the model on a dataset of 600 videos featuring various anomalous human actions, such as assault and arson.</p>
+                <p>• Designed an automated data pipeline to preprocess video streams and generate real-time predictions.</p>
+                <p>• Achieved high accuracy in classifying anomalous actions, enabling early detection of potential crime activities.</p>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/15.png?raw=true" alt="Step 2: Create your project">
-          </li>
-          <li>
-          <li>
-            <div class="step">
-              <strong>Step 7:</strong> Build the project using docker-compose.yml file as shown: 
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto mt-16 px-6 content-center" data-aos="fade-left">
+        <h2 class="section-title text-center font-bold">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Languages</h3>
+                <p>C++, Python, JavaScript, Java</p>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/19.png?raw=true" alt="Step 2: Create your project">
-          </li>
-          <li>
-          <li>
-            <div class="step">
-              <strong>Step 8:</strong> Now, to run the application, create a docker container based on the image just created as shown: 
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Technologies</h3>
+                <p>SQL, MongoDB, Docker, Node.js, React.js</p>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/16.png?raw=true" alt="Step 2: Create your project">
-            <div>The docker containers will start running:</div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/17.png?raw=true" alt="Step 2: Create your project">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 9:</strong> Following is the output of the web application:
+            <div class="bg-white shadow-lgrounded-lg p-6">
+                <h3 class="text-xl font-semibold">Tools & Frameworks</h3>
+                <p>Spark, Kafka, Express.js, TensorFlow, Streamlit, Bootstrap, Tailwind CSS</p>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/18.png?raw=true" alt="Step 2: Create your project">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 10:</strong> Now to push the above created images to docker hub, first create a Dockerhub account if you don't have one already.
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="container mx-auto mt-16 px-6 content-center" data-aos="fade-right">
+        <h2 class="section-title text-center font-bold">Achievements</h2>
+        <div class="grid grid-cols-1 gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Rank 1181/25K in Starters 119 Contest | CodeChef</h3>
+                <p>Earned a rating of 1,464 (2-star) on CodeChef by solving complex problems efficiently.</p>
             </div>
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 11:</strong> Tag your Docker image with your Dockerhub username and repository name like: <code>docker tag imagename yourusername/imagename:tag</code>.
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Rating 1524 on LeetCode (Top 36%)</h3>
+                <p>Consistently performed well in data structures and algorithm challenges on LeetCode.</p>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/20.png?raw=true" alt="Step 5: Tag your Docker image">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 12:</strong> You can check that new image will be created with username/repositoryname.
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Co-authored Paper Published in Springer LNNS Series</h3>
+                <p>Published research on enhancing EEG-based sleep stage prediction using machine learning techniques.</p>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/21.png?raw=true" alt="Step 6: Check new image">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 13:</strong> Log in to Dockerhub using the Docker CLI: <code>docker login</code>.
+        </div>
+    </section>
+
+    <!-- Coding Profiles Section -->
+    <section id="coding-profiles" class="container mx-auto mt-16 px-6 content-center" data-aos="fade-up">
+        <h2 class="section-title text-center font-bold">Profiles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">GitHub</h3>
+                <a href="https://github.com/Malaysanghvi17" class="text-blue-500 underline">github.com/Malaysanghvi17</a>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/7.png?raw=true" alt="Step 7: Log in to Dockerhub">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 14:</strong> Push your Docker image to Dockerhub as shown: <code>docker push yourusername/repositoryname:tag</code>.
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/malay-sanghvi-67bb3b224/" class="text-blue-500 underline">linkedin.com/in/malay-sanghvi</a>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/22.png?raw=true" alt="Step 8: Push your Docker image">
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/23.png?raw=true" alt="Step 8: Push your Docker image">
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/24.png?raw=true" alt="Step 8: Push your Docker image">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Step 15:</strong> Verify that your image is uploaded successfully on Dockerhub.
+        </div>
+    </section>
+
+    <section id="coding-profiles" class="container mx-auto mt-16 px-6 content-center" data-aos="fade-up">
+        <h2 class="section-title text-center font-bold"> Coding Profiles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">CodeChef</h3>
+                <a href="https://www.codechef.com/users/malayanghvi17" class="text-blue-500 underline">codechef.com/users/MalaySanghvi</a>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/25.png?raw=true" alt="Step 9: Verify uploaded image">
-          </li>
-          <li>
-            <div class="step">
-              <strong>Finally:</strong> This is how a tire 3 application hosted in docker works:
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Leetcode</h3>
+                <a href="https://leetcode.com/u/malaysanghvi2004/" class="text-blue-500 underline">codechef.com/users/MalaySanghvi</a>
             </div>
-            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/26.png?raw=true" alt="Step 9: Verify uploaded image">
-          </li>
-        </ol>
-        <h2>Thankyou for reading till the end!</h2>
-      </div>
-    </div>
-  </main>
-  <footer class="site-footer h-card" style="padding: 15px; text-align: center;">
-    <div class="acknowledgment">
-      <h2>Acknowledgment</h2>
-      <p>The project used in this tutorial was adapted from the GitHub repository authored by Paulo.</p>
-      <p>You can find the original repository <a href="https://github.com/pdichone/docker-course-three-tier-web-app">here</a>.</p>
-  </div>
-    <h3>feel free to contact me in case of any doubts or queries!</h3>
-    <h3>My Email id: malaysanghvi2004@gmail.com</h3>
-  </footer>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold">Codeforces</h3>
+                <a href="https://codeforces.com/profile/malaysanghvi2004" class="text-blue-500 underline">codechef.com/users/MalaySanghvi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white p-8 mt-16">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Malay Sanghvi</p>
+        </div>
+    </footer>
+
+    <!-- AOS (Animate on Scroll) JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
