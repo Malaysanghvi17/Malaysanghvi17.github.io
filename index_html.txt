@@ -1,4 +1,4 @@
-file for blog post named: "Welcome to the Blog Post made using Jekyll and github!"
+HTML file for blog post named: "Welcome to the Blog Post made using Jekyll and github!"
 <!DOCTYPE html>
 <html lang="en">
 <head>
