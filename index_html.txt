@@ -1,0 +1,209 @@
+file for blog post named: "Welcome to the Blog Post made using Jekyll and github!"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlogPost on docker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .post-list-heading {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .post-meta {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .post-link {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .dockerhub-upload {
+      margin-top: 40px;
+    }
+
+    .dockerhub-upload h2 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .dockerhub-upload ol {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .dockerhub-upload li {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .dockerhub-upload img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .dockerhub-upload img.label {
+      display: block;
+      font-size: 14px;
+      color: #666;
+      margin-top: 5px;
+    }
+    
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <!-- Header content -->
+  </header>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <div class="home">
+        <h1>
+          <a class="post-link" href="/jekyll/update/2024/04/22/welcome-to-jekyll.html">
+            Welcome to the Blog Post made using Jekyll and github!
+          </a>
+        </h1>
+        <span class="post-meta">Apr 22, 2024</span>
+      </div>
+      <!-- Section for Dockerhub image upload steps -->
+      <div class="dockerhub-upload">
+        <h2>Follow the below given steps to upload multi container(tier 3) image project to dockerhub</h2>
+        <ol>
+          <li>
+            <div class="step">
+              <strong>Step 1:</strong> Create your project's directory structure as shown in figure.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/11.png?raw=true" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 2:</strong> Add dockerfile to each of the three tiers of the project like app, api and db as shown in further steps.
+            </div>
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 3:</strong> Add dockerfile in api as shown: 
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/12.png?raw=true" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 4:</strong> Add dockerfile in app as shown: 
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/13.png?raw=true" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 5:</strong> Add dockerfile in db as shown: 
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/14.png?raw=true" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 6:</strong> Based on the individual dockerfiles of tier three application, create a docker-compose.yml file in the root directory as shown: 
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/15.png?raw=true" alt="Step 2: Create your project">
+          </li>
+          <li>
+          <li>
+            <div class="step">
+              <strong>Step 7:</strong> Build the project using docker-compose.yml file as shown: 
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/19.png?raw=true" alt="Step 2: Create your project">
+          </li>
+          <li>
+          <li>
+            <div class="step">
+              <strong>Step 8:</strong> Now, to run the application, create a docker container based on the image just created as shown: 
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/16.png?raw=true" alt="Step 2: Create your project">
+            <div>The docker containers will start running:</div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/17.png?raw=true" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 9:</strong> Following is the output of the web application:
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/18.png?raw=true" alt="Step 2: Create your project">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 10:</strong> Now to push the above created images to docker hub, first create a Dockerhub account if you don't have one already.
+            </div>
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 11:</strong> Tag your Docker image with your Dockerhub username and repository name like: <code>docker tag imagename yourusername/imagename:tag</code>.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/20.png?raw=true" alt="Step 5: Tag your Docker image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 12:</strong> You can check that new image will be created with username/repositoryname.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/21.png?raw=true" alt="Step 6: Check new image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 13:</strong> Log in to Dockerhub using the Docker CLI: <code>docker login</code>.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/7.png?raw=true" alt="Step 7: Log in to Dockerhub">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 14:</strong> Push your Docker image to Dockerhub as shown: <code>docker push yourusername/repositoryname:tag</code>.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/22.png?raw=true" alt="Step 8: Push your Docker image">
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/23.png?raw=true" alt="Step 8: Push your Docker image">
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/24.png?raw=true" alt="Step 8: Push your Docker image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Step 15:</strong> Verify that your image is uploaded successfully on Dockerhub.
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/25.png?raw=true" alt="Step 9: Verify uploaded image">
+          </li>
+          <li>
+            <div class="step">
+              <strong>Finally:</strong> This is how a tire 3 application hosted in docker works:
+            </div>
+            <img src="https://github.com/Malaysanghvi17/Malaysanghvi17.github.io/blob/main/images/26.png?raw=true" alt="Step 9: Verify uploaded image">
+          </li>
+        </ol>
+        <h2>Thankyou for reading till the end!</h2>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer h-card" style="padding: 15px; text-align: center;">
+    <div class="acknowledgment">
+      <h2>Acknowledgment</h2>
+      <p>The project used in this tutorial was adapted from the GitHub repository authored by Paulo.</p>
+      <p>You can find the original repository <a href="https://github.com/pdichone/docker-course-three-tier-web-app">here</a>.</p>
+  </div>
+    <h3>feel free to contact me in case of any doubts or queries!</h3>
+    <h3>My Email id: malaysanghvi2004@gmail.com</h3>
+  </footer>
+</body>
+</html>
