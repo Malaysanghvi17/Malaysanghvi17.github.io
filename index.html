@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vCPU Simulator</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div class="cpu">
+    <header class="cpu-header">
+      <div>
+        <span class="eyebrow">DIGITAL COMPUTER ARCHITECTURE</span>
+        <h1>vCPU</h1>
+      </div>
+      <div class="status">
+        <span class="status-dot"></span>
+        <span class="status-text">READY</span>
+      </div>
+    </header>
+
+    <div class="cpu-controls">
+      <button id="run-btn" class="control-btn primary">▶ RUN</button>
+      <button id="pause-btn" class="control-btn">⏸ PAUSE</button>
+      <button id="step-btn" class="control-btn">STEP →</button>
+      <button id="reset-btn" class="control-btn">↻ RESET</button>
+      <label class="speed-control">
+        <span>CYCLE TIME</span>
+        <input id="cycle-speed" type="range" min="50" max="2000" step="50" value="1000" />
+        <strong id="cycle-speed-value">1000 ms</strong>
+      </label>
+    </div>
+
+    <div class="cpu-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <h3>PROGRAM CODE</h3>
+          <div id="program-display" class="program-display"></div>
+          <textarea id="program-code" spellcheck="false" style="display:none;"></textarea>
+          <div class="sidebar-btns">
+            <button id="edit-program-btn" class="control-btn">EDIT</button>
+            <button id="load-default-btn" class="control-btn">DEFAULT</button>
+            <button id="load-custom-btn" class="control-btn primary">LOAD</button>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>INSTRUCTION SET</h3>
+          <div class="instruction-list">
+            <div><strong>ADD</strong> Rdest, Rsrc</div>
+            <div><strong>SUB</strong> Rdest, Rsrc</div>
+            <div><strong>MUL</strong> Rdest, Rsrc</div>
+            <div><strong>DIV</strong> Rdest, Rsrc</div>
+            <div><strong>LOAD</strong> Rdest, Addr</div>
+            <div><strong>STORE</strong> Rsrc(or immediate value), Addr</div>
+            <div><strong>CMP</strong> Rsrc, Addr</div>
+            <div><strong>JMPE</strong> Addr</div>
+            <div><strong>JMPG</strong> Addr</div>
+            <div><strong>JMPL</strong> Addr</div>
+            <div><strong>HALT</strong></div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- DATAPATH -->
+      <section class="datapath" id="datapath">
+        <svg id="wires" class="wires" aria-hidden="true"></svg>
+      </section>
+    </div>
+
+    <footer class="cpu-footer">
+      <div><span>CYCLE</span><strong>0</strong></div>
+      <div><span>PC</span><strong>0x0000</strong></div>
+      <div><span>IR</span><strong>idle</strong></div>
+      <div><span>STATE</span><strong>IDLE</strong></div>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
